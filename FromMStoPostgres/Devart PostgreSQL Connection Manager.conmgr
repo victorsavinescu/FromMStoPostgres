@@ -8,7 +8,7 @@
       ConnectByProxy="False">
       <ConnectionString>User Id=postgres;Host=localhost;Database=postgres;Persist Security Info=True;Initial Schema=dbo</ConnectionString>
       <Password
-        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAjFbKSXLPiUqN4LkiqaLLxAAAAAACAAAAAAAQZgAAAAEAACAAAAB/erYszdcEdeePxWji30r4q8iUUOh8dUWP5fORyrU0NQAAAAAOgAAAAAIAACAAAAA1XOERypSZ3nFwTYq6bvqFwDTnJ/uxuAspaISQ6hwTrjAAAAA+/pBZFc/yg+PiPn7nr9tHFs68nTtqrHgCWL/zZHZEQSqA3sOOybDTYVbmS6TxaqhAAAAAFNJpkpBz+LWhG0w8hIJlSz46JS5A8hyzFP2lvuKOTWlOqufQ0NdNQ+FXpw0Gf1s7lgupXsJcJWmSrHSU3cC8Kg==</Password>
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAjFbKSXLPiUqN4LkiqaLLxAAAAAACAAAAAAAQZgAAAAEAACAAAADVhcokjx2KtHkJOhOUNLInzti2J6OHv36ycvG1FC7isgAAAAAOgAAAAAIAACAAAACNeynxIJE62aUVlbwkJALqDrOAOMty4CeJ/iSltbjUZzAAAAAspAFIiTNQI81OhXCzZBi3YTpza4UM2FcotCH4I9ucEE8sxw2Qa2jKdUHxDOKXzgNAAAAAHMvilFBY2/ImviogpdM+zUZR+WmpebgMqwBk52nAw48GsLpzQBJAVKJayEHhynX2EsX7a4nK9i/T4KdFRpccOA==</Password>
     </PostgreSqlConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>
