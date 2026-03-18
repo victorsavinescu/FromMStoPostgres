@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="Devart PostgreSQL Connection Manager"
+  DTS:DTSID="{6187CC0B-84D2-4012-A28B-48EB944B584D}"
+  DTS:CreationName="DevartPostgreSql">
+  <DTS:ObjectData>
+    <PostgreSqlConnectionManager
+      ConnectByProxy="False">
+      <ConnectionString>User Id=postgres;Host=localhost;Database=postgres;Persist Security Info=True;Initial Schema=dbo</ConnectionString>
+      <Password
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAjFbKSXLPiUqN4LkiqaLLxAAAAAACAAAAAAAQZgAAAAEAACAAAAB/erYszdcEdeePxWji30r4q8iUUOh8dUWP5fORyrU0NQAAAAAOgAAAAAIAACAAAAA1XOERypSZ3nFwTYq6bvqFwDTnJ/uxuAspaISQ6hwTrjAAAAA+/pBZFc/yg+PiPn7nr9tHFs68nTtqrHgCWL/zZHZEQSqA3sOOybDTYVbmS6TxaqhAAAAAFNJpkpBz+LWhG0w8hIJlSz46JS5A8hyzFP2lvuKOTWlOqufQ0NdNQ+FXpw0Gf1s7lgupXsJcJWmSrHSU3cC8Kg==</Password>
+    </PostgreSqlConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
