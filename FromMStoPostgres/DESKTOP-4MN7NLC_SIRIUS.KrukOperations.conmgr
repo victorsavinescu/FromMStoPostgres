@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DESKTOP-4MN7NLC_SIRIUS.KrukOperations"
+  DTS:DTSID="{056359FB-0BB5-498C-9232-B35B92F609AC}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=DESKTOP-4MN7NLC\SIRIUS;Initial Catalog=KrukOperations;Provider=SQLNCLI11.1;Persist Security Info=True;Integrated Security=SSPI;Application Name=SSIS-FromMStoPostgres-{056359FB-0BB5-498C-9232-B35B92F609AC}DESKTOP-4MN7NLC\SIRIUS.KrukOperations;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
