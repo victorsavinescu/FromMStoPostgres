@@ -7,6 +7,6 @@
     <DTS:ConnectionManager
       DTS:ConnectRetryCount="1"
       DTS:ConnectRetryInterval="5"
-      DTS:ConnectionString="Data Source=DESKTOP-4MN7NLC;Initial Catalog=KrukOperations;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-FromMStoPostgres-{259CA549-877E-4BA8-AD1B-A0D1A25CEF3A}DESKTOP-4MN7NLC.KrukOperations;Auto Translate=False;" />
+      DTS:ConnectionString="Data Source=DESKTOP-4MN7NLC\SIRIUS;Initial Catalog=master;Provider=MSOLEDBSQL19.1;Integrated Security=SSPI;Use Encryption for Data=optional;Trust Server Certificate=True;Application Name=SSIS-{259CA549-877E-4BA8-AD1B-A0D1A25CEF3A}DESKTOP-4MN7NLC.KrukOperations;" />
   </DTS:ObjectData>
 </DTS:ConnectionManager>
