@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="MSSQLToPosgresSQL"
   DTS:PackageType="5"
-  DTS:VersionBuild="27"
-  DTS:VersionGUID="{1634EA9E-D193-41A1-A3B9-43F8D3AAF984}">
+  DTS:VersionBuild="28"
+  DTS:VersionGUID="{88566FAF-E3E5-4F45-B03F-A43C49365345}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
