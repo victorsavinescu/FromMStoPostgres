@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="MSSQLToPosgresSQL"
   DTS:PackageType="5"
-  DTS:VersionBuild="39"
-  DTS:VersionGUID="{8C611691-87CC-4463-99DC-B12DB433657D}">
+  DTS:VersionBuild="40"
+  DTS:VersionGUID="{CBCD97B4-FEFC-4AA3-A206-E78ABA77586A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -536,7 +536,7 @@
         <NodeLayout
           Size="188,42"
           Id="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\SQL Server Destination"
-          TopLeft="569,68" />
+          TopLeft="641,92" />
         <NodeLayout
           Size="197,42"
           Id="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers"
@@ -547,33 +547,33 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="114,9"
+              EndConnector="186,33"
               Start="0,0"
-              End="106.5,9">
+              End="178.5,33">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="53,0" />
+                    End="89,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="53,0"
-                    Point2="57,0"
-                    Point3="57,4" />
+                    Point1="89,0"
+                    Point2="93,0"
+                    Point3="93,4" />
                   <mssgle:LineSegment
-                    End="57,5" />
+                    End="93,29" />
                   <mssgle:CubicBezierSegment
-                    Point1="57,5"
-                    Point2="57,9"
-                    Point3="61,9" />
+                    Point1="93,29"
+                    Point2="93,33"
+                    Point3="97,33" />
                   <mssgle:LineSegment
-                    End="106.5,9" />
+                    End="178.5,33" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-15.0950390625,-22,144.190078125,16"
+              BoundingBox="20.9049609375,-22,144.190078125,16"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
