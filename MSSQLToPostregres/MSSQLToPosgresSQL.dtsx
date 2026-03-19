@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="MSSQLToPosgresSQL"
   DTS:PackageType="5"
-  DTS:VersionBuild="15"
-  DTS:VersionGUID="{F244CAA3-327C-4439-A466-F8B054FCD809}">
+  DTS:VersionBuild="22"
+  DTS:VersionGUID="{039E32D7-439A-4E34-ABF1-AB8BBF18F9A7}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -240,8 +240,8 @@
               <connections>
                 <connection
                   refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Connections[OleDbConnection]"
-                  connectionManagerID="{211DA0B5-174E-4555-8C52-8AD80BE59435}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-4MN7NLC_SIRIUS.KrukOperations1]"
+                  connectionManagerID="{6D445470-650E-44E9-B774-699EF901008C}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-4MN7NLC_SIRIUS.krukoperations.sa]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -258,7 +258,7 @@
                       externalMetadataColumnId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Output].ExternalColumns[Id]"
                       lineageId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Output].Columns[Id]"
                       name="Id"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="RedirectRow" />
                     <outputColumn
                       refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Output].Columns[Name]"
                       dataType="wstr"
@@ -268,35 +268,35 @@
                       length="100"
                       lineageId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Output].Columns[Name]"
                       name="Name"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="RedirectRow" />
                     <outputColumn
                       refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Output].Columns[Segment]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Output].ExternalColumns[Segment]"
                       length="30"
                       lineageId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Output].Columns[Segment]"
                       name="Segment"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="RedirectRow" />
                     <outputColumn
                       refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Output].Columns[ErrorCode]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Output].ExternalColumns[ErrorCode]"
                       lineageId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Output].Columns[ErrorCode]"
                       name="ErrorCode"
-                      truncationRowDisposition="FailComponent" />
+                      truncationRowDisposition="RedirectRow" />
                     <outputColumn
                       refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Output].Columns[ErrorColumn]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Output].ExternalColumns[ErrorColumn]"
                       lineageId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
-                      truncationRowDisposition="FailComponent" />
+                      truncationRowDisposition="RedirectRow" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -400,7 +400,7 @@
                   dataType="System.String"
                   description="The name of the database object to copy data into."
                   expressionType="Notify"
-                  name="BulkInsertTableName">[FailedRecords]</property>
+                  name="BulkInsertTableName">[dbo].[FailedRecords]</property>
                 <property
                   dataType="System.Boolean"
                   description="Specifies that any constraints on the destination object are checked during the data copy operation. Corresponds to the bulk insert CHECK_CONSTRAINTS option."
@@ -453,8 +453,8 @@
               <connections>
                 <connection
                   refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\SQL Server Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{211DA0B5-174E-4555-8C52-8AD80BE59435}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-4MN7NLC_SIRIUS.KrukOperations1]"
+                  connectionManagerID="{6D445470-650E-44E9-B774-699EF901008C}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-4MN7NLC_SIRIUS.krukoperations.sa]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -485,17 +485,17 @@
                       externalMetadataColumnId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[Segment]"
                       lineageId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Error Output].Columns[Segment]" />
                     <inputColumn
-                      refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[ErrorCodeBk]"
+                      refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[ErrorCode]"
                       cachedDataType="i4"
-                      cachedName="ErrorCodeBk"
+                      cachedName="ErrorCode"
                       externalMetadataColumnId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[ErrorCode]"
-                      lineageId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Error Output].Columns[ErrorCodeBk]" />
+                      lineageId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Error Output].Columns[ErrorCode]" />
                     <inputColumn
-                      refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[ErrorColumnBk]"
+                      refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[ErrorColumn]"
                       cachedDataType="i4"
-                      cachedName="ErrorColumnBk"
+                      cachedName="ErrorColumn"
                       externalMetadataColumnId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[ErrorColumn]"
-                      lineageId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Error Output].Columns[ErrorColumnBk]" />
+                      lineageId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -567,53 +567,13 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="197,42"
-          Id="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers"
-          TopLeft="258,59" />
-        <NodeLayout
-          Size="224,42"
-          Id="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart PostgreSQL Destination"
-          TopLeft="466,271" />
-        <EdgeLayout
-          Id="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18.Paths[OLE DB Source Output]"
-          TopLeft="356.5,101">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="221.5,170"
-              Start="0,0"
-              End="221.5,162.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,81" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,81"
-                    Point2="0,85"
-                    Point3="4,85" />
-                  <mssgle:LineSegment
-                    End="217.5,85" />
-                  <mssgle:CubicBezierSegment
-                    Point1="217.5,85"
-                    Point2="221.5,85"
-                    Point3="221.5,89" />
-                  <mssgle:LineSegment
-                    End="221.5,162.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="102.75,90,16,16"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
           Size="188,42"
           Id="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\SQL Server Destination"
           TopLeft="730,101" />
+        <NodeLayout
+          Size="197,42"
+          Id="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers"
+          TopLeft="258,59" />
         <EdgeLayout
           Id="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18.Paths[OLE DB Source Error Output]"
           TopLeft="455,80">
@@ -650,9 +610,57 @@
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="224,42"
+          Id="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart PostgreSQL Destination"
+          TopLeft="146,245" />
+        <EdgeLayout
+          Id="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18.Paths[OLE DB Source Output]"
+          TopLeft="356.5,101">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-98.5,144"
+              Start="0,0"
+              End="-98.5,136.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,68" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,68"
+                    Point2="0,72"
+                    Point3="-4,72" />
+                  <mssgle:LineSegment
+                    End="-94.5,72" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-94.5,72"
+                    Point2="-98.5,72"
+                    Point3="-98.5,76" />
+                  <mssgle:LineSegment
+                    End="-98.5,136.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-57.25,77,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\SQL Server Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers">
     <Properties>
@@ -663,14 +671,6 @@
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\SQL Server Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
