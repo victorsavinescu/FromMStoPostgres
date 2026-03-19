@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DESKTOP-4MN7NLC_SIRIUS.KrukOperations1"
+  DTS:DTSID="{211DA0B5-174E-4555-8C52-8AD80BE59435}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=DESKTOP-4MN7NLC\SIRIUS;Initial Catalog=KrukOperations;Provider=MSOLEDBSQL19.1;Integrated Security=SSPI;Use Encryption for Data=Optional;Trust Server Certificate=True;Application Name=SSIS-MSSQLToPostregres-{211DA0B5-174E-4555-8C52-8AD80BE59435}DESKTOP-4MN7NLC\SIRIUS.KrukOperations1;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
