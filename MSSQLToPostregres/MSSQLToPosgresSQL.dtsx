@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="MSSQLToPosgresSQL"
   DTS:PackageType="5"
-  DTS:VersionBuild="34"
-  DTS:VersionGUID="{46EF8F92-417C-4DD4-8182-3945A05D5EC0}">
+  DTS:VersionBuild="39"
+  DTS:VersionGUID="{8C611691-87CC-4463-99DC-B12DB433657D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -34,10 +34,10 @@
           version="1">
           <components>
             <component
-              refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart-PostgreSQL-Destination"
+              refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart PostgreSQL Destination"
               componentClassID="Microsoft.ManagedComponentHost"
               description="Loads or modifies data into an object of the PostgreSQL database."
-              name="Devart-PostgreSQL-Destination"
+              name="Devart PostgreSQL Destination"
               usesDispositions="true">
               <properties>
                 <property
@@ -47,21 +47,21 @@
                 <property
                   dataType="System.Int32"
                   description="Number of retries to call operation."
-                  name="Retry Count">3</property>
+                  name="Retry Count">5</property>
                 <property
                   dataType="System.Int32"
                   description="Waiting second before next retry."
-                  name="Retry Interval">5</property>
+                  name="Retry Interval">1</property>
                 <property
                   dataType="System.String"
                   description="The name of the database object to copy data into."
                   name="TableName"
-                  typeConverter="Devart.SSIS.Common.Design.TablesListConverter">dbo.customers</property>
+                  typeConverter="Devart.SSIS.Common.Design.TablesListConverter">Customers</property>
                 <property
                   dataType="System.Int32"
                   description="Destination operation"
                   name="Operation"
-                  typeConverter="Devart.SSIS.Common.DestinationOperation">1</property>
+                  typeConverter="Devart.SSIS.Common.DestinationOperation">0</property>
                 <property
                   dataType="System.Int32"
                   description="The size of data packet loaded to the server."
@@ -77,7 +77,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart-PostgreSQL-Destination.Connections[Devart PostgreSql]"
+                  refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart PostgreSQL Destination.Connections[Devart PostgreSql]"
                   connectionManagerID="{882FD7CD-2B26-41B6-9E58-FD2B18C709E2}:external"
                   connectionManagerRefId="Project.ConnectionManagers[Devart-PostgreSQL-Connection Manager]"
                   description="Devart PostgreSQL Connection Manager"
@@ -85,107 +85,49 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart-PostgreSQL-Destination.Inputs[input]"
-                  description="Input columns"
+                  refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart PostgreSQL Destination.Inputs[input]"
                   errorOrTruncationOperation="Insert operation"
-                  errorRowDisposition="IgnoreFailure"
+                  errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart-PostgreSQL-Destination.Inputs[input].Columns[Id]"
-                      cachedDataType="i4"
-                      cachedName="Id"
-                      externalMetadataColumnId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart-PostgreSQL-Destination.Inputs[input].ExternalColumns[id]"
-                      lineageId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Output].Columns[Id]" />
-                    <inputColumn
-                      refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart-PostgreSQL-Destination.Inputs[input].Columns[Name]"
-                      cachedDataType="wstr"
-                      cachedLength="100"
-                      cachedName="Name"
-                      externalMetadataColumnId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart-PostgreSQL-Destination.Inputs[input].ExternalColumns[name]"
-                      lineageId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Output].Columns[Name]" />
-                    <inputColumn
-                      refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart-PostgreSQL-Destination.Inputs[input].Columns[Segment]"
-                      cachedDataType="wstr"
-                      cachedLength="30"
-                      cachedName="Segment"
-                      externalMetadataColumnId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart-PostgreSQL-Destination.Inputs[input].ExternalColumns[segment]"
-                      lineageId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Output].Columns[Segment]" />
-                    <inputColumn
-                      refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart-PostgreSQL-Destination.Inputs[input].Columns[ErrorCode]"
-                      cachedDataType="i4"
-                      cachedName="ErrorCode"
-                      externalMetadataColumnId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart-PostgreSQL-Destination.Inputs[input].ExternalColumns[errorcode]"
-                      lineageId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Output].Columns[ErrorCode]" />
-                    <inputColumn
-                      refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart-PostgreSQL-Destination.Inputs[input].Columns[ErrorColumn]"
-                      cachedDataType="i4"
-                      cachedName="ErrorColumn"
-                      externalMetadataColumnId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart-PostgreSQL-Destination.Inputs[input].ExternalColumns[errorcolumn]"
-                      lineageId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Output].Columns[ErrorColumn]" />
-                  </inputColumns>
                   <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart-PostgreSQL-Destination.Inputs[input].ExternalColumns[errorcolumn]"
-                      dataType="i4"
-                      name="errorcolumn" />
-                    <externalMetadataColumn
-                      refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart-PostgreSQL-Destination.Inputs[input].ExternalColumns[errorcode]"
-                      dataType="i4"
-                      name="errorcode" />
-                    <externalMetadataColumn
-                      refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart-PostgreSQL-Destination.Inputs[input].ExternalColumns[segment]"
-                      dataType="wstr"
-                      length="30"
-                      name="segment" />
-                    <externalMetadataColumn
-                      refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart-PostgreSQL-Destination.Inputs[input].ExternalColumns[name]"
-                      dataType="wstr"
-                      length="100"
-                      name="name" />
-                    <externalMetadataColumn
-                      refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart-PostgreSQL-Destination.Inputs[input].ExternalColumns[id]"
-                      dataType="i4"
-                      name="id" />
-                  </externalMetadataColumns>
+                    isUsed="True" />
                 </input>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart-PostgreSQL-Destination.Outputs[Error Output]"
+                  refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart PostgreSQL Destination.Outputs[Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Error Output"
-                  synchronousInputId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart-PostgreSQL-Destination.Inputs[input]">
+                  synchronousInputId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart PostgreSQL Destination.Inputs[input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart-PostgreSQL-Destination.Outputs[Error Output].Columns[ErrorCode]"
+                      refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart PostgreSQL Destination.Outputs[Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart-PostgreSQL-Destination.Outputs[Error Output].Columns[ErrorCode]"
+                      lineageId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart PostgreSQL Destination.Outputs[Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart-PostgreSQL-Destination.Outputs[Error Output].Columns[ErrorColumn]"
+                      refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart PostgreSQL Destination.Outputs[Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart-PostgreSQL-Destination.Outputs[Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart PostgreSQL Destination.Outputs[Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                     <outputColumn
-                      refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart-PostgreSQL-Destination.Outputs[Error Output].Columns[ErrorDescription]"
+                      refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart PostgreSQL Destination.Outputs[Error Output].Columns[ErrorDescription]"
                       dataType="wstr"
                       length="1024"
-                      lineageId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart-PostgreSQL-Destination.Outputs[Error Output].Columns[ErrorDescription]"
+                      lineageId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart PostgreSQL Destination.Outputs[Error Output].Columns[ErrorDescription]"
                       name="ErrorDescription" />
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart-PostgreSQL-Destination.Outputs[Output]"
+                  refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart PostgreSQL Destination.Outputs[Output]"
                   exclusionGroup="1"
                   name="Output"
-                  synchronousInputId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart-PostgreSQL-Destination.Inputs[input]">
+                  synchronousInputId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart PostgreSQL Destination.Inputs[input]">
                   <externalMetadataColumns
                     isUsed="True" />
                 </output>
@@ -536,7 +478,7 @@
               startId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Error Output]" />
             <path
               refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18.Paths[OLE DB Source Output]"
-              endId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart-PostgreSQL-Destination.Inputs[input]"
+              endId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart PostgreSQL Destination.Inputs[input]"
               name="OLE DB Source Output"
               startId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Output]" />
           </paths>
@@ -544,6 +486,29 @@
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
+  <DTS:EventHandlers>
+    <DTS:EventHandler
+      DTS:refId="Package.EventHandlers[OnError]"
+      DTS:CreationName="OnError"
+      DTS:DTSID="{E1206137-C54C-4CF3-996F-785EC1F051B8}"
+      DTS:EventID="3145776"
+      DTS:EventName="OnError"
+      DTS:LocaleID="-1">
+      <DTS:Variables>
+        <DTS:Variable
+          DTS:CreationName=""
+          DTS:Description="The propagate property of the event"
+          DTS:DTSID="{14B89E1D-35F1-442E-8F71-CBAD4E4B766C}"
+          DTS:IncludeInDebugDump="6789"
+          DTS:Namespace="System"
+          DTS:ObjectName="Propagate">
+          <DTS:VariableValue
+            DTS:DataType="11">-1</DTS:VariableValue>
+        </DTS:Variable>
+      </DTS:Variables>
+      <DTS:Executables />
+    </DTS:EventHandler>
+  </DTS:EventHandlers>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
 <!--If you manually edit this section and make a mistake, you can delete it. -->
@@ -571,85 +536,83 @@
         <NodeLayout
           Size="188,42"
           Id="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\SQL Server Destination"
-          TopLeft="730,101" />
-        <NodeLayout
-          Size="225,42"
-          Id="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart-PostgreSQL-Destination"
-          TopLeft="146,245" />
+          TopLeft="569,68" />
         <NodeLayout
           Size="197,42"
           Id="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers"
           TopLeft="258,59" />
-        <EdgeLayout
-          Id="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18.Paths[OLE DB Source Output]"
-          TopLeft="356.5,101">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-98.5,144"
-              Start="0,0"
-              End="-98.5,136.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,68" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,68"
-                    Point2="0,72"
-                    Point3="-4,72" />
-                  <mssgle:LineSegment
-                    End="-94.5,72" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-94.5,72"
-                    Point2="-98.5,72"
-                    Point3="-98.5,76" />
-                  <mssgle:LineSegment
-                    End="-98.5,136.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-57.25,77,16,16"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18.Paths[OLE DB Source Error Output]"
           TopLeft="455,80">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="275,42"
+              EndConnector="114,9"
               Start="0,0"
-              End="267.5,42">
+              End="106.5,9">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="133.5,0" />
+                    End="53,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="133.5,0"
-                    Point2="137.5,0"
-                    Point3="137.5,4" />
+                    Point1="53,0"
+                    Point2="57,0"
+                    Point3="57,4" />
                   <mssgle:LineSegment
-                    End="137.5,38" />
+                    End="57,5" />
                   <mssgle:CubicBezierSegment
-                    Point1="137.5,38"
-                    Point2="137.5,42"
-                    Point3="141.5,42" />
+                    Point1="57,5"
+                    Point2="57,9"
+                    Point3="61,9" />
                   <mssgle:LineSegment
-                    End="267.5,42" />
+                    End="106.5,9" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="65.4049609375,-22,144.190078125,16"
+              BoundingBox="-15.0950390625,-22,144.190078125,16"
               RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="224,42"
+          Id="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart PostgreSQL Destination"
+          TopLeft="292,188" />
+        <EdgeLayout
+          Id="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18.Paths[OLE DB Source Output]"
+          TopLeft="356.5,101">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="47.5,87"
+              Start="0,0"
+              End="47.5,79.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,39.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,39.5"
+                    Point2="0,43.5"
+                    Point3="4,43.5" />
+                  <mssgle:LineSegment
+                    End="43.5,43.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="43.5,43.5"
+                    Point2="47.5,43.5"
+                    Point3="47.5,47.5" />
+                  <mssgle:LineSegment
+                    End="47.5,79.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

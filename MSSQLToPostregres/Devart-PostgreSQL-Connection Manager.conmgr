@@ -8,7 +8,7 @@
       ConnectByProxy="False">
       <ConnectionString>User Id=krukadmin;Host=localhost;Database=krukoltp;Pooling=False;Connection Lifetime=60;Persist Security Info=True;Initial Schema=dbo;SSH Port=22;SSH Authentication Type=PublicKey;SSLMode=Allow;Keep Connected=60;Target Session=Primary;Force IPv4=False;License Key=37ED-A511-001</ConnectionString>
       <Password
-        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAjFbKSXLPiUqN4LkiqaLLxAAAAAACAAAAAAAQZgAAAAEAACAAAABhcoD9SqIPn30Te2lVGcq2AKQPis1G6P7sTgI1AKZryQAAAAAOgAAAAAIAACAAAAApcQxz94g204ki90YzT3VQ1YbHlhLGYEMfc7gSR4fwIDAAAAADqHQEv8rsRNk8ahdhPqy57PC1otkp2weWgsXbX1OoM0CYfZJ7X052IqSBqhGQGGVAAAAAay0vFu7vGc82CtG19WKGRndPcKvfiGKIJvJqQACcxckcPKHEYXa8vEIr22kBHp2QFnstqAKput7rRYuWBnsCoA==</Password>
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAjFbKSXLPiUqN4LkiqaLLxAAAAAACAAAAAAAQZgAAAAEAACAAAAA2CH68sA/gepxyIkkWg8jqNHiVQjlZVkKsymayVobo5QAAAAAOgAAAAAIAACAAAAAVt/XFheipEgCG5S+MCgo9/YNRt4h202cwMctgCM6fVDAAAACWyvj9xCjwnxaFpt900WEH9hyZPcb9rqhqIG9LBv0S+yzFVJmMqmGLzEuJXqMpla9AAAAAkyxIRYugzB9o7O65dOaJnFBoXFTw9x2C8YDa3hEcPGgoIHA/o9QtQ7VZrdCBHE5ax8fiqw/rTV1pXhnPZ8OETA==</Password>
     </PostgreSqlConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>
