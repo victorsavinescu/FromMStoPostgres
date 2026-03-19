@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="MSSQLToPosgresSQL"
   DTS:PackageType="5"
-  DTS:VersionBuild="29"
-  DTS:VersionGUID="{7D19ACB0-2A96-42FB-8265-F4D466F36840}">
+  DTS:VersionBuild="31"
+  DTS:VersionGUID="{8F298BED-EE13-4F1C-9C8A-D6DB0A07D35B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -29,6 +29,8 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <pipeline
+          BLOBTempStoragePath="C:\Users\Victor\source\repos\KrukIntegration"
+          bufferTempStoragePath="C:\Users\Victor\source\repos\KrukIntegration"
           version="1">
           <components>
             <component
