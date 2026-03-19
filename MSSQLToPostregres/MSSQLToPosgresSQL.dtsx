@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="MSSQLToPosgresSQL"
   DTS:PackageType="5"
-  DTS:VersionBuild="32"
-  DTS:VersionGUID="{771D4B64-3F6B-4A1D-8BE2-5820F8FAB759}">
+  DTS:VersionBuild="34"
+  DTS:VersionGUID="{46EF8F92-417C-4DD4-8182-3945A05D5EC0}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -79,7 +79,7 @@
                 <connection
                   refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart-PostgreSQL-Destination.Connections[Devart PostgreSql]"
                   connectionManagerID="{882FD7CD-2B26-41B6-9E58-FD2B18C709E2}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[Devart PostgreSQL Connection Manager]"
+                  connectionManagerRefId="Project.ConnectionManagers[Devart-PostgreSQL-Connection Manager]"
                   description="Devart PostgreSQL Connection Manager"
                   name="Devart PostgreSql" />
               </connections>
