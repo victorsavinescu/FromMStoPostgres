@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="MSSQLToPosgresSQL"
   DTS:PackageType="5"
-  DTS:VersionBuild="14"
-  DTS:VersionGUID="{F3C8E053-5E34-4345-8DD3-648FBA5BD894}">
+  DTS:VersionBuild="15"
+  DTS:VersionGUID="{F244CAA3-327C-4439-A466-F8B054FCD809}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -84,12 +84,70 @@
               <inputs>
                 <input
                   refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart PostgreSQL Destination.Inputs[input]"
+                  description="Input columns"
                   errorOrTruncationOperation="Insert operation"
-                  errorRowDisposition="FailComponent"
+                  errorRowDisposition="IgnoreFailure"
                   hasSideEffects="true"
                   name="input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart PostgreSQL Destination.Inputs[input].Columns[Id]"
+                      cachedDataType="i4"
+                      cachedName="Id"
+                      externalMetadataColumnId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart PostgreSQL Destination.Inputs[input].ExternalColumns[id]"
+                      lineageId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Output].Columns[Id]" />
+                    <inputColumn
+                      refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart PostgreSQL Destination.Inputs[input].Columns[Name]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="Name"
+                      externalMetadataColumnId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart PostgreSQL Destination.Inputs[input].ExternalColumns[name]"
+                      lineageId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Output].Columns[Name]" />
+                    <inputColumn
+                      refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart PostgreSQL Destination.Inputs[input].Columns[Segment]"
+                      cachedDataType="wstr"
+                      cachedLength="30"
+                      cachedName="Segment"
+                      externalMetadataColumnId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart PostgreSQL Destination.Inputs[input].ExternalColumns[segment]"
+                      lineageId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Output].Columns[Segment]" />
+                    <inputColumn
+                      refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart PostgreSQL Destination.Inputs[input].Columns[ErrorCode]"
+                      cachedDataType="i4"
+                      cachedName="ErrorCode"
+                      externalMetadataColumnId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart PostgreSQL Destination.Inputs[input].ExternalColumns[errorcode]"
+                      lineageId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Output].Columns[ErrorCode]" />
+                    <inputColumn
+                      refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart PostgreSQL Destination.Inputs[input].Columns[ErrorColumn]"
+                      cachedDataType="i4"
+                      cachedName="ErrorColumn"
+                      externalMetadataColumnId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart PostgreSQL Destination.Inputs[input].ExternalColumns[errorcolumn]"
+                      lineageId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Output].Columns[ErrorColumn]" />
+                  </inputColumns>
                   <externalMetadataColumns
-                    isUsed="True" />
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart PostgreSQL Destination.Inputs[input].ExternalColumns[errorcolumn]"
+                      dataType="i4"
+                      name="errorcolumn" />
+                    <externalMetadataColumn
+                      refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart PostgreSQL Destination.Inputs[input].ExternalColumns[errorcode]"
+                      dataType="i4"
+                      name="errorcode" />
+                    <externalMetadataColumn
+                      refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart PostgreSQL Destination.Inputs[input].ExternalColumns[segment]"
+                      dataType="wstr"
+                      length="30"
+                      name="segment" />
+                    <externalMetadataColumn
+                      refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart PostgreSQL Destination.Inputs[input].ExternalColumns[name]"
+                      dataType="wstr"
+                      length="100"
+                      name="name" />
+                    <externalMetadataColumn
+                      refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\Devart PostgreSQL Destination.Inputs[input].ExternalColumns[id]"
+                      dataType="i4"
+                      name="id" />
+                  </externalMetadataColumns>
                 </input>
               </inputs>
               <outputs>

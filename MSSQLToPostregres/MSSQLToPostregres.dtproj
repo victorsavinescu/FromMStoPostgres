@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-4MN7NLC</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAjFbKSXLPiUqN4LkiqaLLxAAAAAACAAAAAAAQZgAAAAEAACAAAADPGPFUyEvxXV60VbJrFfw4kxnotEiQR2IY4QV9Fcan0QAAAAAOgAAAAAIAACAAAAA7AFSPfsvGxl0eJuxDAnKDItkBY2APUNi+KFl0eueN75AAAAA1Mkb9pA0TqlwnUp71ZURRG7cz7GpSY3utQRTe7dcy/23DnSXyB3quXXQ8h0uD5+RJrLnqDvpmghnDCQtj8Q/0kfgApkQRomp1QUzsqQd6dN6SChTAgyxjYWwWH71myj+WAPyea5CtSu8jTbqmJDolEz47yTCg5Ehg3EwzzG0G9c/rXy7lZZ0tMd69x5dLRMtAAAAAho3n0EM6mo9PIEOzLoWfyDpknpbyJMu6wQryqQ4ha4OLDfFRVLsdQXUFVq0/G91JBdPAqCb7Y9skVQxePA679g==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAjFbKSXLPiUqN4LkiqaLLxAAAAAACAAAAAAAQZgAAAAEAACAAAACk8eLBCqblvoV9By2f18UjuqsDdPlCnpes7GF0c7YHvQAAAAAOgAAAAAIAACAAAADTgxRPdOKOShJ+meTQn+f/7eEfl4OMJNRvjitXmj6QBZAAAAAp3aI31P0tMeZFtU9aCg1Xkot4dLnKdyubaRYPdhiaMoP56mvpFfPRlsBddJwZEDyPAB9FaFXtevv08HMeaBvqwbwgwVmbPxu0KDFy/7eDRYXActRalnZG5uLdgqh74XKtKqABhRJCqAvHuaIoD8lqt3z/RwA4Nj/A8lwIqlkG/y/NdezjxeBj9No/R4/aePBAAAAAIxvDmmy7Aifjj+e1Y//K0MfC9suVd2PeW+d4SqPJqmlGeybxjoQEW9kpkCY6hI2kubwE52xkRF9nViSvLIq5SQ==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -64,7 +64,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">Data Source=DESKTOP-4MN7NLC\SIRIUS;Initial Catalog=KrukOperations;Provider=MSOLEDBSQL19.1;Integrated Security=SSPI;Use Encryption for Data=Optional;Trust Server Certificate=True;Application Name=SSIS-MSSQLToPostregres-{211DA0B5-174E-4555-8C52-8AD80BE59435}DESKTOP-4MN7NLC\SIRIUS.KrukOperations1;Auto Translate=False;</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">Data Source=DESKTOP-4MN7NLC\SIRIUS;User ID=krukadmin;Initial Catalog=KrukOperations;Provider=MSOLEDBSQL19.1;Auto Translate=False;Application Name=SSIS-MSSQLToPostregres-{211DA0B5-174E-4555-8C52-8AD80BE59435}DESKTOP-4MN7NLC\SIRIUS.KrukOperations1;Use Encryption for Data=Optional;Trust Server Certificate=True;</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -183,6 +183,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">krukadmin</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -212,7 +213,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">User Id=krukadmin;Host=localhost;Database=krukoltp;Persist Security Info=True;License Key=37ED-A511-001</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">User Id=krukadmin;Host=localhost;Database=krukoltp;Pooling=False;Connection Lifetime=60;Persist Security Info=True;Initial Schema=dbo;SSH Authentication Type=PublicKey;Keep Connected=60;Target Session=Primary;Force IPv4=True;License Key=37ED-A511-001</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -286,8 +287,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">
-                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">dbo</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -344,10 +344,10 @@
                 <SSIS:Property SSIS:Name="Name">MSSQLToPosgresSQL</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">2</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">15</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{67F44543-16A2-4EE0-A7E6-A22E3CB91196}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{F244CAA3-327C-4439-A466-F8B054FCD809}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -378,7 +378,13 @@
         <LinkedAzureSSISIR />
         <LinkedAzureStorage />
         <RemoteExecutionFolder />
-        <ParameterConfigurationValues />
+        <ParameterConfigurationValues>
+          <ConfigurationSetting>
+            <Id>LastModifiedTime</Id>
+            <Name>LastModifiedTime</Name>
+            <Value xsi:type="xsd:dateTime">2026-03-19T11:00:59.1609741Z</Value>
+          </ConfigurationSetting>
+        </ParameterConfigurationValues>
       </Options>
     </Configuration>
   </Configurations>

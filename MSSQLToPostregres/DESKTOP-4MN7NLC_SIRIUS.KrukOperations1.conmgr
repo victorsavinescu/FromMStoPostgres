@@ -7,6 +7,10 @@
     <DTS:ConnectionManager
       DTS:ConnectRetryCount="1"
       DTS:ConnectRetryInterval="5"
-      DTS:ConnectionString="Data Source=DESKTOP-4MN7NLC\SIRIUS;Initial Catalog=KrukOperations;Provider=MSOLEDBSQL19.1;Integrated Security=SSPI;Use Encryption for Data=Optional;Trust Server Certificate=True;Application Name=SSIS-MSSQLToPostregres-{211DA0B5-174E-4555-8C52-8AD80BE59435}DESKTOP-4MN7NLC\SIRIUS.KrukOperations1;Auto Translate=False;" />
+      DTS:ConnectionString="Data Source=DESKTOP-4MN7NLC\SIRIUS;User ID=krukadmin;Initial Catalog=KrukOperations;Provider=MSOLEDBSQL19.1;Auto Translate=False;Application Name=SSIS-MSSQLToPostregres-{211DA0B5-174E-4555-8C52-8AD80BE59435}DESKTOP-4MN7NLC\SIRIUS.KrukOperations1;Use Encryption for Data=Optional;Trust Server Certificate=True;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAjFbKSXLPiUqN4LkiqaLLxAAAAAACAAAAAAAQZgAAAAEAACAAAAC2eLAnqhl1ifHxE74yv50OBw3JgX7s+j5FfmQ5O9ITlgAAAAAOgAAAAAIAACAAAAAFYaorbhd1+Jmj+FcfOoGiHktYE9UVgf4LCgTfegpVnYAAAAAGLb6nRMX7PSiL2eh1ORCzujXZ1dNUbMYDoCik3kTLNIItxOyIcq3WuJfGkXEYXMADPtjlqPOM1SLkPIVVP0l/Qx5ei/qP2D5f8//jLjKebhFfAfFwZJiKO84gOUbSB69jO0uzPQUcYmb0CwaQp+I+w8mgAl8AIo21R2CSuHhKUUAAAADgdYK89DYo3NABc8Y9f4NdeXgivqDLOXGlaUrEZVu188ZFWjz/QcFB4mSWpnbA5jfX8G3WJ1j2nxr8cvKXKVuq</DTS:Password>
+    </DTS:ConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>
