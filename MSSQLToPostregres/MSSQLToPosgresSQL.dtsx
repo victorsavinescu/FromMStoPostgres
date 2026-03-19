@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="MSSQLToPosgresSQL"
   DTS:PackageType="5"
-  DTS:VersionBuild="8"
-  DTS:VersionGUID="{380E5D43-F2F9-4867-977B-1C4E560942AB}">
+  DTS:VersionBuild="13"
+  DTS:VersionGUID="{80F62DA7-A220-443D-A703-946EAF54C242}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -221,6 +221,24 @@
                       lineageId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Output].Columns[Segment]"
                       name="Segment"
                       truncationRowDisposition="IgnoreFailure" />
+                    <outputColumn
+                      refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Output].ExternalColumns[ErrorCode]"
+                      lineageId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Output].ExternalColumns[ErrorColumn]"
+                      lineageId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -238,6 +256,14 @@
                       dataType="wstr"
                       length="30"
                       name="Segment" />
+                    <externalMetadataColumn
+                      refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Output].ExternalColumns[ErrorCode]"
+                      dataType="i4"
+                      name="ErrorCode" />
+                    <externalMetadataColumn
+                      refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Output].ExternalColumns[ErrorColumn]"
+                      dataType="i4"
+                      name="ErrorColumn" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -248,31 +274,48 @@
                     <outputColumn
                       refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Error Output].Columns[Id]"
                       dataType="i4"
+                      description="PK"
                       lineageId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Error Output].Columns[Id]"
                       name="Id" />
                     <outputColumn
                       refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Error Output].Columns[Name]"
                       dataType="wstr"
+                      description="Name nvarchar(100)"
                       length="100"
                       lineageId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Error Output].Columns[Name]"
                       name="Name" />
                     <outputColumn
                       refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Error Output].Columns[Segment]"
                       dataType="wstr"
+                      description="Segment nvarchar(30)"
                       length="30"
                       lineageId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Error Output].Columns[Segment]"
                       name="Segment" />
                     <outputColumn
                       refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
+                      description="ErrorCode int"
                       lineageId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
+                      name="ErrorCode" />
                     <outputColumn
                       refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                       dataType="i4"
+                      description="ErrorColumn int"
                       lineageId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
+                      name="ErrorColumn" />
+                    <outputColumn
+                      refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Error Output].Columns[ErrorCodeBk]"
+                      dataType="i4"
+                      description="not used"
+                      lineageId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Error Output].Columns[ErrorCodeBk]"
+                      name="ErrorCodeBk"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Error Output].Columns[ErrorColumnBk]"
+                      dataType="i4"
+                      description="not used"
+                      lineageId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Error Output].Columns[ErrorColumnBk]"
+                      name="ErrorColumnBk"
                       specialFlags="2" />
                   </outputColumns>
                   <externalMetadataColumns />
@@ -384,17 +427,17 @@
                       externalMetadataColumnId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[Segment]"
                       lineageId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Error Output].Columns[Segment]" />
                     <inputColumn
-                      refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[ErrorCode]"
+                      refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[ErrorCodeBk]"
                       cachedDataType="i4"
-                      cachedName="ErrorCode"
+                      cachedName="ErrorCodeBk"
                       externalMetadataColumnId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[ErrorCode]"
-                      lineageId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Error Output].Columns[ErrorCode]" />
+                      lineageId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Error Output].Columns[ErrorCodeBk]" />
                     <inputColumn
-                      refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[ErrorColumn]"
+                      refId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[ErrorColumnBk]"
                       cachedDataType="i4"
-                      cachedName="ErrorColumn"
+                      cachedName="ErrorColumnBk"
                       externalMetadataColumnId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[ErrorColumn]"
-                      lineageId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]" />
+                      lineageId="Package\From Microsoft SQL Server 2022 to Postres SQL Server 18\MS SQL Table Customers.Outputs[OLE DB Source Error Output].Columns[ErrorColumnBk]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -545,7 +588,7 @@
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="74.06609375,-17.43359375,126.8678125,11.43359375"
+              BoundingBox="65.4049609375,-22,144.190078125,16"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
