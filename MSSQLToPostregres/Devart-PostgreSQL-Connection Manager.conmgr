@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
-  DTS:ObjectName="Devart PostgreSQL Connection Manager"
+  DTS:ObjectName="Devart-PostgreSQL-Connection Manager"
   DTS:DTSID="{882FD7CD-2B26-41B6-9E58-FD2B18C709E2}"
   DTS:CreationName="DevartPostgreSql">
   <DTS:ObjectData>
@@ -8,7 +8,7 @@
       ConnectByProxy="False">
       <ConnectionString>User Id=krukadmin;Host=localhost;Database=krukoltp;Pooling=False;Connection Lifetime=60;Persist Security Info=True;Initial Schema=dbo;SSH Port=22;SSH Authentication Type=PublicKey;SSLMode=Allow;Keep Connected=60;Target Session=Primary;Force IPv4=False;License Key=37ED-A511-001</ConnectionString>
       <Password
-        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAjFbKSXLPiUqN4LkiqaLLxAAAAAACAAAAAAAQZgAAAAEAACAAAACoQHaXAWAbhIc8oZDJRBhQTjn0z4p0EC8EP4tbjcGH+gAAAAAOgAAAAAIAACAAAAC1reNveypdA+6Trj/8wiQYyHTdc5kYzQwUUk74M290bDAAAAAweBYjvpfQcrd3cC0CHYy0ucom9RE8+f6xQlm4rpo0xt21QPmH3HRmCZOuDvMAxxRAAAAAdanGlq+en4huyy+j9W1XYGfVM35SxdOUANxw+olYFGIsmPP4qFIByz1FimlnIG1FUq4EbkeZmpOQWW+LKEI0XQ==</Password>
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAjFbKSXLPiUqN4LkiqaLLxAAAAAACAAAAAAAQZgAAAAEAACAAAABhcoD9SqIPn30Te2lVGcq2AKQPis1G6P7sTgI1AKZryQAAAAAOgAAAAAIAACAAAAApcQxz94g204ki90YzT3VQ1YbHlhLGYEMfc7gSR4fwIDAAAAADqHQEv8rsRNk8ahdhPqy57PC1otkp2weWgsXbX1OoM0CYfZJ7X052IqSBqhGQGGVAAAAAay0vFu7vGc82CtG19WKGRndPcKvfiGKIJvJqQACcxckcPKHEYXa8vEIr22kBHp2QFnstqAKput7rRYuWBnsCoA==</Password>
     </PostgreSqlConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>
