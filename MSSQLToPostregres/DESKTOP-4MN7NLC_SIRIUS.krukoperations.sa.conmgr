@@ -7,10 +7,10 @@
     <DTS:ConnectionManager
       DTS:ConnectRetryCount="1"
       DTS:ConnectRetryInterval="5"
-      DTS:ConnectionString="Data Source=DESKTOP-4MN7NLC\SIRIUS;User ID=sa;Initial Catalog=krukoperations;Provider=SQLOLEDB.1;Application Name=SSIS-MSSQLToPostregres-{6D445470-650E-44E9-B774-699EF901008C}DESKTOP-4MN7NLC\SIRIUS.krukoperations.sa;Auto Translate=False;">
+      DTS:ConnectionString="Data Source=DESKTOP-4MN7NLC\SIRIUS;User ID=sa;Initial Catalog=krukoperations;Provider=SQLOLEDB.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-MSSQLToPostregres-{6D445470-650E-44E9-B774-699EF901008C}DESKTOP-4MN7NLC\SIRIUS.krukoperations.sa;">
       <DTS:Password
         DTS:Name="Password"
-        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAjFbKSXLPiUqN4LkiqaLLxAAAAAACAAAAAAAQZgAAAAEAACAAAABqChLWMJhlTbXMzqKDxLox4lxm9GXdARoszcKgLJUxuQAAAAAOgAAAAAIAACAAAABAUItgS09D3uC7BDsqDy7PRK0/VSCKGvwHZlFTpdCAx4AAAAB7cnW6pLpzHQmsaAlUP/g4PGJFBf1f+D4tvLZlrMBvM6BX7VV7WtzELPIc3ceDyDVci6aYCmn70YwulBfJaKcyGvkPuNNXV/CxODyXjl5mnCWJTCUrDtppo3qUmPPwT6HOw+gJDc9dmu9gdPqs1YJyQXk0szdBNg7EhTYCCdLqBkAAAAAmow5ehyh+DRAiPEW4fY7toXEWBfW21JRHdd3TVzJnFOhncLd8d1bh9JndOzjn1MXrU7F/sW3riOpAfuEM6Qr4</DTS:Password>
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAjFbKSXLPiUqN4LkiqaLLxAAAAAACAAAAAAAQZgAAAAEAACAAAAAP04f8ejDv2YzyKxdPWKPs6lEQijxglRgCJtYELCiu8gAAAAAOgAAAAAIAACAAAADfpw5f2tOa7j/ADeFgR04LXIpD9hRlBp+RCAIHtRSDjoAAAAAR1sXo+w1uJ2IBN/afyW9vKG4tZESp5i56oIkXopGexmXfsexIsqPCsTbXRneHJYxoHSAqf1mBXSuAit6ijEo75zibb0kQ2r7G+ctQs+kFauVhMLjDhLsORmgxkxRbrrzRPp/YYHVf+ldY0XeusXCUkPYXqNQXuF26OFiFOStxJ0AAAAAybvnFzoQKx1z9mEsYRBUdnqqtd8KPhe1aho40j21P4Q8oH509iG1gloTyDJCNVIMzNR26xbcCpPWQB2IrdpUM</DTS:Password>
     </DTS:ConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>
