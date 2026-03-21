@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="_kuruadmin"
+  DTS:DTSID="{9B10D00B-24D4-4788-BB4A-79E711512B24}"
+  DTS:CreationName="ADO.NET:Devart.Data.PostgreSql.PgSqlConnection, Devart.Data.PostgreSql, Version=9.1.33.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="User Id=kuruadmin;Host=localhost;Database=krukoltp;Pooling=False;Persist Security Info=True;Integrated Security=True;Initial Schema=dbo;SSLMode=Disable;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAjFbKSXLPiUqN4LkiqaLLxAAAAAACAAAAAAAQZgAAAAEAACAAAADNDXXU97jt15YIx49rKI6KtD8dsHWty6hdGp/xRWWqQwAAAAAOgAAAAAIAACAAAABqgegKUMEZ0pm2sQ8WGUGQIBTBYMXjYEgq6ZR5oxeszYAAAAAmvs4EEDv+/8asRiEMLUjHUSaf5liiSziAJUhorEmqPcwfzC9K2GTg1hky2r5jjH5mitBnk0qPqZUmj18VZH2+/4GitgUB4q8qWlxtoQ0r5bZeXWG82JmrvQAE+F3fhxXxNwiRKZPfR0G84NhINbj8EaRr/Ji8R4xv/cSJCUK5tUAAAAD85vYRCN1bxFnD9RCMhcLTKAoYlDnKS/3anB0Vn4kA9Kr6N8fefPNsS34Ke0GLHz+DSnl8EoXPytlimA2MxuaE</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
