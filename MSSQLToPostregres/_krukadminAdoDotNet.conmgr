@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="_krukadminAdoDotNet"
+  DTS:DTSID="{A9E212F5-EECF-4CCB-9D46-BC19689969EC}"
+  DTS:CreationName="ADO.NET:Npgsql.NpgsqlConnection, Npgsql, Version=4.1.14.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Keepalive=3600;Socket Receive Buffer Size=8192;Socket Send Buffer Size=8192;TCP Keepalive=True;TCP Keepalive Interval=360000;TCP Keepalive Time=3600000;Convert Infinity DateTime=True;Server Compatibility Mode=NoTypeLoading;Application Name=krukoltpapp;Database=krukoltp;Enlist=False;Host=localhost;Username=krukadmin;EF Admin Database=postgres;EF Template Database=postgres;Integrated Security=True;Persist Security Info=True;Trust Server Certificate=True;Log Parameters=True;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAjFbKSXLPiUqN4LkiqaLLxAAAAAACAAAAAAAQZgAAAAEAACAAAABRXVjWcj610MHeI4QXtF3MBeqf6CU90SEM4gPBh5H30QAAAAAOgAAAAAIAACAAAADLcAsw/pVUY/U3sydKVtQDF73UHIIaChzjpuiQqNenNYAAAADUHHuVxoWbPBkuZOmlbZoD5/yYOF2XAkO+IdRt11ikxUG4ajykcciPh5zncGcr9CPnGq+on+M1NeTulsXsubKg5Cyqf6LpQIs92b9C8ANhfQ7piEFrd4x9JLu28zjvNZYk73RyCIrDAtj/jxXhK5ebuISLZj8yRbHOg6rYaTMUpEAAAABkBLE6o+nZeIT3o0TfRUI0vBdXGFlfJUvxnNh4xdHk13FMC8brZPtv8q5f+q5v6E1RT7NjEBtOZkFczcMSSkSw</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

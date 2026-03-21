@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-4MN7NLC</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAjFbKSXLPiUqN4LkiqaLLxAAAAAACAAAAAAAQZgAAAAEAACAAAADC6uck11PA5vGx34RFvQi6+CY5k4qBjJoo3E+bmUlHbgAAAAAOgAAAAAIAACAAAADeGgzfHfZHwoc70j3fHFSdEj8LN/kHWGIySsu89oCSYpAAAAAQzg9g9ZAf3brC2MceXTRu+cvXkWf2DtM9qQEdm8iLNreBfRBvUh8pY0W4hBI5opg63gzQMEtijTsfAVQFPxAIZWavY/EuLgUMI+l0ddcPXjfjsfs/cWHa4QbcbnLjuXYQH6zFo3y6FYlAlrAIJ2MZFistNK86cd1A6ZdF+3IELv1wYoXfDczNH8L+9JO0C+1AAAAAASZW+cmW28oOLtbjG4CtT3g0K9nTGBu/ulUOUene3X9kpW7QiiIOUxoZzXAyF/Efh+4RrR7f+3iNZVfxZZouxw==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAjFbKSXLPiUqN4LkiqaLLxAAAAAACAAAAAAAQZgAAAAEAACAAAAAtN92Rt5O8uXgJB4PlPgBQuREtm/Xe9p4uq38m1mjPAgAAAAAOgAAAAAIAACAAAADGJZMccv7un6EtsLDFvhRjRnakvbLTNhI516rczMlTEZAAAACgnX0kciYZZVb+Rn39rONV1xMitq54wIG4xKDtYKRj6OMrRAZp+q58RZdAw7fV8v3ms5da6YbK/EN1srINFiaLPCNg3TAkSRmJrMSElKD8CNhqSilc917n5VjOHnv4iMzXvpPS1060QVSN6zy2P4nvAgJYqSa8kkSbl59UIti8obxwVe3u9IJLqzCsOm88mgFAAAAABO+yRIq5zY+QpkQR2bVo7X0MRfN7sE2+bbH3GjT6OEATa4wfeiEX3R2iqO0Pf6gfUU+ZoAdHJ/37OrJwLb58eA==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -36,6 +36,7 @@
           <SSIS:ConnectionManager SSIS:Name="DESKTOP-4MN7NLC_SIRIUS.krukoperations.sa.conmgr" />
           <SSIS:ConnectionManager SSIS:Name="Devart-PostgreSQL-Connection Manager.conmgr" />
           <SSIS:ConnectionManager SSIS:Name="_kuruadmin.conmgr" />
+          <SSIS:ConnectionManager SSIS:Name="_krukadminAdoDotNet.conmgr" />
         </SSIS:ConnectionManagers>
         <SSIS:DeploymentInfo>
           <SSIS:ProjectConnectionParameters>
@@ -214,7 +215,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">User Id=krukadmin;Host=localhost;Database=krukoltp;Pooling=False;Connection Lifetime=60;Persist Security Info=True;Integrated Security=True;Initial Schema=dbo;SSH Host=192.168.1.17;SSH Port=22;SSH User=krukadmin;SSH Password=kruk@dm1n;SSH Passphrase=krukadmin;SSH Authentication Type=Password;SSLMode=Allow;Keep Connected=60;Target Session=Primary;Force IPv4=False;License Key=37ED-A511-001</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">User Id=krukadmin;Host=localhost;Database=krukoltp;Pooling=False;Connection Lifetime=60;Persist Security Info=True;Integrated Security=True;Initial Schema=dbo;SSH Host=192.168.1.17;SSH Port=22;SSH User=krukadmin;SSH Password=kruk@dm1n;SSH Passphrase=krukadmin;SSH Authentication Type=Password;SSLMode=Allow;SSL Cert=C:\\Personal\Kruk\18\data\kruk.cer;SSL Key=C://Personal/Kruk;SSL TLS Protocol=TLS;Keep Connected=60;Target Session=Primary;Force IPv4=False;License Key=37ED-A511-001</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -363,7 +364,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">User Id=kuruadmin;Host=localhost;Database=krukoltp;Pooling=False;Persist Security Info=True;Integrated Security=True;Initial Schema=dbo;SSLMode=Disable;</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">User Id=kuruadmin;Host=localhost;Database=krukoltp;Pooling=False;Persist Security Info=True;Integrated Security=True;Initial Schema=dbo;SSH Host=localhost;SSH User=krukadmin;SSH Password=kruk@dm1n;SSH Private Key=storage://RSA.;SSH Passphrase=krukadmin;SSH Host Key=file://C:\Personal\Kruk\kruk.pem;SSLMode=Disable;</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -454,6 +455,122 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM._krukadminAdoDotNet.ConnectByProxy">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM._krukadminAdoDotNet.ConnectionString">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">Keepalive=3600;Socket Receive Buffer Size=8192;Socket Send Buffer Size=8192;TCP Keepalive=True;TCP Keepalive Interval=360000;TCP Keepalive Time=3600000;Convert Infinity DateTime=True;Server Compatibility Mode=NoTypeLoading;Application Name=krukoltpapp;Database=krukoltp;Enlist=False;Host=localhost;Username=krukadmin;EF Admin Database=postgres;EF Template Database=postgres;Integrated Security=True;Persist Security Info=True;Trust Server Certificate=True;Log Parameters=True;</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM._krukadminAdoDotNet.ConnectUsingManagedIdentity">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM._krukadminAdoDotNet.InitialCatalog">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM._krukadminAdoDotNet.Password">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM._krukadminAdoDotNet.RetainSameConnection">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM._krukadminAdoDotNet.ServerName">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM._krukadminAdoDotNet.UserName">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
           </SSIS:ProjectConnectionParameters>
           <SSIS:PackageInfo>
             <SSIS:PackageMetaData SSIS:Name="MSSQLToPosgresSQL.dtsx">
@@ -462,10 +579,10 @@
                 <SSIS:Property SSIS:Name="Name">MSSQLToPosgresSQL</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">32</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">41</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{771D4B64-3F6B-4A1D-8BE2-5820F8FAB759}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{421BDCF7-9694-482D-BFA5-D5DDBB4436DB}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
