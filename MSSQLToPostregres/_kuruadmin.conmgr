@@ -5,10 +5,10 @@
   DTS:CreationName="ADO.NET:Devart.Data.PostgreSql.PgSqlConnection, Devart.Data.PostgreSql, Version=9.1.33.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
   <DTS:ObjectData>
     <DTS:ConnectionManager
-      DTS:ConnectionString="User Id=kuruadmin;Host=localhost;Database=krukoltp;Pooling=False;Persist Security Info=True;Integrated Security=True;Initial Schema=dbo;SSLMode=Disable;">
+      DTS:ConnectionString="User Id=kuruadmin;Host=localhost;Database=krukoltp;Pooling=False;Persist Security Info=True;Integrated Security=True;Initial Schema=dbo;SSH Host=localhost;SSH User=krukadmin;SSH Password=kruk@dm1n;SSH Private Key=storage://RSA.;SSH Passphrase=krukadmin;SSH Host Key=file://C:\Personal\Kruk\kruk.pem;SSLMode=Disable;">
       <DTS:Password
         DTS:Name="Password"
-        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAjFbKSXLPiUqN4LkiqaLLxAAAAAACAAAAAAAQZgAAAAEAACAAAADNDXXU97jt15YIx49rKI6KtD8dsHWty6hdGp/xRWWqQwAAAAAOgAAAAAIAACAAAABqgegKUMEZ0pm2sQ8WGUGQIBTBYMXjYEgq6ZR5oxeszYAAAAAmvs4EEDv+/8asRiEMLUjHUSaf5liiSziAJUhorEmqPcwfzC9K2GTg1hky2r5jjH5mitBnk0qPqZUmj18VZH2+/4GitgUB4q8qWlxtoQ0r5bZeXWG82JmrvQAE+F3fhxXxNwiRKZPfR0G84NhINbj8EaRr/Ji8R4xv/cSJCUK5tUAAAAD85vYRCN1bxFnD9RCMhcLTKAoYlDnKS/3anB0Vn4kA9Kr6N8fefPNsS34Ke0GLHz+DSnl8EoXPytlimA2MxuaE</DTS:Password>
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAjFbKSXLPiUqN4LkiqaLLxAAAAAACAAAAAAAQZgAAAAEAACAAAABjOQSk4UqvTLGKjV9U9IgOJUV+mw5eQLWFXplxw5G0RwAAAAAOgAAAAAIAACAAAAC8Zqyxcxm5cx4v0MgyhAPOjNefzWOAK2HHXyVihwuBAIAAAAA8bySzooAWJcX22tviF4rOF/+Bn8U1cg2tUFpBQoCtYgyDgCapSeQ3M89B5evWq+hfa0ipLrZmH+HdxExsBrNvbxfDMb+XHG1rBqnh99VKleuFGU9uxewpMHxRh5xnoXF//fdpMLxvNR5ivnT1/KMMbEkmlxA+Z8CyL5OVjrVkHEAAAABq8xadR7NtHaSgw4+jOi47RkWqoksH3Oe7d/8GwjYTkt6DXnSyQz5UnoRPFjA/uEf61LePrwgzpJDcQ/YMJH4M</DTS:Password>
     </DTS:ConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>
