@@ -2,13 +2,13 @@
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:ObjectName="_krukadminAdoDotNet"
   DTS:DTSID="{A9E212F5-EECF-4CCB-9D46-BC19689969EC}"
-  DTS:CreationName="ADO.NET:Npgsql.NpgsqlConnection, Npgsql, Version=4.1.14.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7">
+  DTS:CreationName="ADO.NET:Devart.Data.PostgreSql.PgSqlConnection, Devart.Data.PostgreSql, Version=9.1.33.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
   <DTS:ObjectData>
     <DTS:ConnectionManager
-      DTS:ConnectionString="Keepalive=3600;Socket Receive Buffer Size=8192;Socket Send Buffer Size=8192;TCP Keepalive=True;TCP Keepalive Interval=360000;TCP Keepalive Time=3600000;Convert Infinity DateTime=True;Server Compatibility Mode=NoTypeLoading;Application Name=krukoltpapp;Database=krukoltp;Enlist=False;Host=localhost;Username=krukadmin;EF Admin Database=postgres;EF Template Database=postgres;Integrated Security=True;Persist Security Info=True;Trust Server Certificate=True;Log Parameters=True;">
+      DTS:ConnectionString="User Id=krukadmin;Host=localhost;Database=krukoltp;Unicode=True;Protocol=Ver20;Connection Timeout=150;Pooling=False;Persist Security Info=True;Initial Schema=dbo;SSH Host=127.0.0.1;SSH User=krukadmin;SSH Password=kruk@dm1n;SSH Private Key=file://C:\Personal\Kruk\kruk.pem;SSH Passphrase=krukadmin;SSH Authentication Type=PublicKey;SSH Host Key=file://C:\Personal\Kruk\kruppk.pem;SSH Strict Host Key Checking=True;SSLMode=Allow;SSL Cert=file://C:\Personal\Kruk\kruk.pem;SSL Key=file://C:\Personal\Kruk\kruppk.pem;SSL TLS Protocol=1.2;Keep Connected=120;Enlist=False;Default FetchAll=False;ApplicationName=krukapp;Target Session=Any;Join Statement Notices=False;Force IPv4=True;Use Session Timezone=False;License Key=37ED-C131-001;">
       <DTS:Password
         DTS:Name="Password"
-        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAjFbKSXLPiUqN4LkiqaLLxAAAAAACAAAAAAAQZgAAAAEAACAAAABRXVjWcj610MHeI4QXtF3MBeqf6CU90SEM4gPBh5H30QAAAAAOgAAAAAIAACAAAADLcAsw/pVUY/U3sydKVtQDF73UHIIaChzjpuiQqNenNYAAAADUHHuVxoWbPBkuZOmlbZoD5/yYOF2XAkO+IdRt11ikxUG4ajykcciPh5zncGcr9CPnGq+on+M1NeTulsXsubKg5Cyqf6LpQIs92b9C8ANhfQ7piEFrd4x9JLu28zjvNZYk73RyCIrDAtj/jxXhK5ebuISLZj8yRbHOg6rYaTMUpEAAAABkBLE6o+nZeIT3o0TfRUI0vBdXGFlfJUvxnNh4xdHk13FMC8brZPtv8q5f+q5v6E1RT7NjEBtOZkFczcMSSkSw</DTS:Password>
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAjFbKSXLPiUqN4LkiqaLLxAAAAAACAAAAAAAQZgAAAAEAACAAAAChkdbNDqoeDaB8EsU0WV5pouMl0UdCc34ZhSV3dXqSPAAAAAAOgAAAAAIAACAAAADeQ81tA8dhc3ryLJqlyE0WPXcYvQZ9cKiFR5CsnpZZ34AAAAAkrrHA9r6bo72jdgkZbIt/p2zzz9DfBcvkzxX3dbBL9XM3LiAS5pzl/0y8Ij+CpEAOuvEW4QB677QSbal5NGK465TCMppmzd0iUFynAaafWBA3gtvroFHkTodXrch6ULrdp+R4OFu8AK4B/4GCFjx0HNSjrg+hcencgBzOJucAs0AAAABzCkgQlynzsJqHs226Vp3G23iYdLSvp04ZrEDFTVZ5v4IUl5gjm/cymzeChr9tU+6JVJzeLjcqx+dQqXr6BwOa</DTS:Password>
     </DTS:ConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>
