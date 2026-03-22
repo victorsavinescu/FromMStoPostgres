@@ -6,9 +6,9 @@
   <DTS:ObjectData>
     <PostgreSqlConnectionManager
       ConnectByProxy="False">
-      <ConnectionString>User Id=krukadmin;Host=localhost;Database=krukoltp;Pooling=False;Connection Lifetime=60;Persist Security Info=True;Integrated Security=True;Initial Schema=dbo;SSH Host=192.168.1.17;SSH Port=22;SSH User=krukadmin;SSH Password=kruk@dm1n;SSH Passphrase=krukadmin;SSH Authentication Type=Password;SSLMode=Allow;SSL Cert=C:\\Personal\Kruk\18\data\kruk.cer;SSL Key=C://Personal/Kruk;SSL TLS Protocol=TLS;Keep Connected=60;Target Session=Primary;Force IPv4=False;License Key=37ED-A511-001</ConnectionString>
+      <ConnectionString>User Id=krukadmin;Host=localhost;Database=krukoltp;Unicode=True;Protocol=Ver20;Pooling=False;Connection Lifetime=60;Persist Security Info=True;Integrated Security=False;Initial Schema=dbo;SSH Host=192.168.1.17;SSH Port=22;SSH User=krukadmin;SSH Password=kruk@dm1n;SSH Private Key="- hosts:localhost secretName: kruk@dm1n";SSH Passphrase=krukadmin;SSH Authentication Type=Password;SSH Host Key="- hosts:localhost secretName: kruk@dm1n";SSH Strict Host Key Checking=True;SSLMode=Allow;SSL Cert=C:\\Personal\Kruk\18\data\kruk.cer;SSL Key=C://Personal/Kruk;SSL TLS Protocol=TLS;Keep Connected=60;Enlist=False;Keep Alive=60;Ignore Unnamed Parameters=True;ApplicationName=krukapp;Target Session=Primary;Join Statement Notices=False;Force IPv4=True;License Key=37ED-A511-001</ConnectionString>
       <Password
-        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAjFbKSXLPiUqN4LkiqaLLxAAAAAACAAAAAAAQZgAAAAEAACAAAACChlY3utFFh+gV83t79c8dSlnbUTeK7c39D75SJfburAAAAAAOgAAAAAIAACAAAAARyTjVbUXw3/fVYc7ycIkBQNs6Cg37CGfVvXIAMcVwVjAAAADMk5p0kEWbHxy2ie5PZZSL2IwiaOYh2f4Fx4A+Gvq9s63S668CJaAEg0i/SF3vpMlAAAAACv3GqXUSx7RTz82SckNM9kNzDxfUXZO6BhtvZeWKDmV59bPQxboe2vJ4xQGeti5J+32co67XR+W/SghejyIUKw==</Password>
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAjFbKSXLPiUqN4LkiqaLLxAAAAAACAAAAAAAQZgAAAAEAACAAAACHG9vI/9R4C3FYwNpXOSVCx/MbvqdJ/Ea9yUTGoMtSTgAAAAAOgAAAAAIAACAAAABT0VvyTirC4x+/a7DVflzy7pns7UtmnT96njllSVTj4jAAAAAVT0KaOeaD7F2sUJbyjSDafrJ1z7Xc0LD8YZBHsozUpRsoGa1qJxKBf9PaEn4NhudAAAAAsEQQT47HqeVeDQR1P7ZiZiEhq/FLJCxZPcaMsi8rVXXZieU3DzC3GeZJUgriSGlOv2l41BiFZQbg6gGZiUFWOg==</Password>
     </PostgreSqlConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>
