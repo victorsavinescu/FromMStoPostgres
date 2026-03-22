@@ -5,6 +5,10 @@
   DTS:CreationName="ADO.NET:Devart.Data.PostgreSql.PgSqlConnection, Devart.Data.PostgreSql, Version=9.1.33.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
   <DTS:ObjectData>
     <DTS:ConnectionManager
-      DTS:ConnectionString="User Id=krukadmin;Host=localhost;Database=krukoltp;Unicode=True;Protocol=Ver20;Connection Timeout=150;Pooling=False;Persist Security Info=True;Initial Schema=dbo;SSH Host=127.0.0.1;SSH User=krukadmin;SSH Password=kruk@dm1n;SSH Private Key=file://C:\Personal\Kruk\kruk.pem;SSH Passphrase=krukadmin;SSH Authentication Type=PublicKey;SSH Host Key=file://C:\Personal\Kruk\kruppk.pem;SSH Strict Host Key Checking=True;SSLMode=Allow;SSL Cert=file://C:\Personal\Kruk\kruk.pem;SSL Key=file://C:\Personal\Kruk\kruppk.pem;SSL TLS Protocol=1.2;Keep Connected=120;Enlist=False;Default FetchAll=False;ApplicationName=krukapp;Target Session=Any;Join Statement Notices=False;Force IPv4=True;Use Session Timezone=False;License Key=37ED-C131-001;" />
+      DTS:ConnectionString="User Id=krukadmin;Host=localhost;Database=krukoltp;Unicode=True;Protocol=Ver20;Connection Timeout=150;Pooling=False;Persist Security Info=True;Initial Schema=dbo;SSH Host=127.0.0.1;SSH User=krukadmin;SSH Password=kruk@dm1n;SSH Private Key=file://C:\Personal\Kruk\kruk.pem;SSH Passphrase=krukadmin;SSH Authentication Type=PublicKey;SSH Host Key=file://C:\Personal\Kruk\kruppk.pem;SSH Strict Host Key Checking=True;SSLMode=Allow;SSL Cert=file://C:\Personal\Kruk\kruk.pem;SSL Key=file://C:\Personal\Kruk\kruppk.pem;SSL TLS Protocol=1.2;Keep Connected=120;Enlist=False;Default FetchAll=False;ApplicationName=krukapp;Target Session=Any;Join Statement Notices=False;Force IPv4=True;Use Session Timezone=False;License Key=37ED-C131-001;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAjFbKSXLPiUqN4LkiqaLLxAAAAAACAAAAAAAQZgAAAAEAACAAAADiPahgqxBa8fgf1DAiPFadyFbiaZl+IY/ErWk22Aio9QAAAAAOgAAAAAIAACAAAAD20sfR3R26tT3jvWzBN+13CfkwsZnRfnzSDTj+tWkIqYAAAABG3RrQMKLkPzqm0x4vlaYgwAKEkBBXHQNFGgm0G2XL9qBkcdcQR3WTVA7LNKWxncbXQgusRXnQi3C4jxXtCrxk3JGFUtjUHYBl1NPMEqueSGFjlqKbOpp7WWcJMgkj7M9tUKSv23JE/rtGGymK8/7eG6guyo2ZmTDg2c2z2EWIiUAAAACrxcGQW3QF98cAuwZPsfk0e6JRxxUx4YHTj0Q8WyNQrOLEL95SGxdKSkthg82GTsVeJJNgf3dt6tX7CvCFMbqc</DTS:Password>
+    </DTS:ConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>
